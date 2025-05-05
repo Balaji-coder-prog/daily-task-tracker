@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+.app.dark {
+  background-color: #000000;
+  color: #fff;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.task-item {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.task-item:hover {
+  background-color: #e9f2ff;
+}
+
+.app.dark .task-item:hover {
+  background-color: #2b2b3d;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Bigger input and button */
+.input-group.input-group-lg .form-control {
+  height: 100px;
+  font-size: 1.2rem;
+}
+
+.input-group.input-group-lg .btn {
+  height: 100px;
+  width: 300px;
+  font-size: 1.1rem;
+}
